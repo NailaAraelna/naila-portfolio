@@ -1,38 +1,68 @@
-
 export default function Contact() {
   return (
-    <section id="contact" className="relative py-10 px-3 text-white">
-      
-      {/* Floating background decoration */}
-      <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute w-72 h-72 bg-purple-500/20 rounded-full blur-3xl top-10 left-10 animate-pulse"></div>
-        <div className="absolute w-72 h-72 bg-blue-500/20 rounded-full blur-3xl bottom-10 right-10 animate-pulse"></div>
-      </div>
+    <section
+      id="contact"
+      className="py-28 px-6 bg-[#FFF9F5]"
+    >
+      <div className="max-w-5xl mx-auto">
 
-      <div className="relative max-w-3xl mx-auto text-center">
+        <div className="text-center mb-16">
 
-        <motion.h2
-          initial={{ opacity: 0, y: 40 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-black font-bold"
-        >
-          Let’s Build Something <span className="text-purple-400">Amazing</span>
-        </motion.h2>
+          <span className="text-pink-500 font-semibold">
+            CONTACT
+          </span>
 
-        <p className="text-gray-400 mt-5">
-          Punya project UI/UX, website, atau aplikasi? Yuk diskusi bareng 🚀
-        </p>
+          <h2 className="text-4xl md:text-5xl font-black mt-3">
+            Let's Work Together ✨
+          </h2>
 
-        {/* CTA Button */}
-        <motion.a
-          whileHover={{ scale: 1.08 }}
-          whileTap={{ scale: 0.95 }}
-          href="mailto:youremail@gmail.com"
-          className="inline-block mt-8 px-8 py-4 bg-gradient-to-r from-purple-500 to-blue-500 rounded-full font-semibold shadow-lg"
-        >
-          Contact Me
-        </motion.a>
+          <p className="text-gray-500 mt-4">
+            Have a project in mind? I'd love to hear about it.
+          </p>
+
+        </div>
+
+        <div className="bg-white rounded-[40px] p-10 shadow-xl">
+
+          <div className="grid md:grid-cols-2 gap-6">
+
+            <input
+              type="text"
+              placeholder="Your Name"
+              className="p-4 rounded-2xl border border-pink-100 outline-none focus:border-pink-400"
+            />
+
+            <input
+              type="email"
+              placeholder="Your Email"
+              className="p-4 rounded-2xl border border-pink-100 outline-none focus:border-pink-400"
+            />
+
+          </div>
+
+          <textarea
+            rows="6"
+            placeholder="Tell me about your project..."
+            className="w-full mt-6 p-4 rounded-2xl border border-pink-100 outline-none focus:border-pink-400"
+          />
+
+          <button
+            className="
+            mt-6
+            px-8
+            py-4
+            rounded-full
+            bg-gradient-to-r
+            from-pink-500
+            to-purple-500
+            text-white
+            font-semibold
+            "
+          >
+            Send Message
+          </button>
+
+        </div>
 
       </div>
     </section>
