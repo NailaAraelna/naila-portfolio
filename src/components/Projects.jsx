@@ -73,6 +73,8 @@ export default function Projects() {
               shadow-lg
               bg-gradient-to-br from-white to-pink-50
               hover:-translate-y-2
+              hover:rotate-1
+              hover:shadow-2xl
               hover:shadow-2xl
               hover: backdrop-hue-rotate-180
               transition-all
