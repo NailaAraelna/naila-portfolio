@@ -42,6 +42,23 @@ export default function Hero() {
         "
       />
 
+      {/* Blob 3 */}
+
+      <div
+        className="
+        absolute
+        w-[300px]
+        h-[300px]
+        rounded-full
+        bg-blue-300/30
+        blur-[100px]
+        top-1/2
+        left-1/2
+        -translate-x-1/2
+        -translate-y-1/2
+        "
+      />
+
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
 
         {/* LEFT */}
