@@ -1,29 +1,18 @@
 import { motion } from "framer-motion";
 
+export default function About() {
   return (
     <motion.section
+      id="about"
       initial={{ opacity: 0, y: 80 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.7 }}
-      className="py-32"
-    >
-      <h2 className="text-4xl font-bold">
-        About Me
-      </h2>
-    </motion.section>
-  );
-
-export default function About() {
-  return (
-    <section
-      id="about"
       className="py-28 px-6 bg-white"
     >
       <div className="max-w-6xl mx-auto">
 
         <div className="text-center mb-16">
-
           <span className="text-pink-500 font-semibold">
             ABOUT ME
           </span>
@@ -32,13 +21,11 @@ export default function About() {
             Turning Ideas Into
             <span className="text-pink-500"> Beautiful Designs</span>
           </h2>
-
         </div>
 
         <div className="grid md:grid-cols-2 gap-10">
 
           <div className="bg-pink-50 p-8 rounded-3xl shadow-lg">
-
             <h3 className="font-bold text-2xl mb-4">
               Hi, I'm Naila 👋
             </h3>
@@ -49,11 +36,9 @@ export default function About() {
               I believe great design should be beautiful, functional,
               and accessible for everyone.
             </p>
-
           </div>
 
           <div className="bg-purple-50 p-8 rounded-3xl shadow-lg">
-
             <h3 className="font-bold text-2xl mb-4">
               What I Love
             </h3>
@@ -66,12 +51,11 @@ export default function About() {
               <li>🌈 Visual Branding</li>
               <li>💻 Front-End Development</li>
             </ul>
-
           </div>
 
         </div>
 
       </div>
-    </section>
+    </motion.section>
   );
 }
