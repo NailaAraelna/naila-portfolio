@@ -1,3 +1,19 @@
+import { motion } from "framer-motion";
+
+  return (
+    <motion.section
+      initial={{ opacity: 0, y: 80 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.7 }}
+      className="py-32"
+    >
+      <h2 className="text-4xl font-bold">
+        About Me
+      </h2>
+    </motion.section>
+  );
+
 export default function About() {
   return (
     <section
