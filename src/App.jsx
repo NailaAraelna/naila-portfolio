@@ -17,7 +17,7 @@ export default function App() {
     dark:bg-[#0F172A]
     dark:text-white
     transition-colors
-    duration-500]">
+    duration-500">
       <Navbar />
       <Hero />
       <About />
