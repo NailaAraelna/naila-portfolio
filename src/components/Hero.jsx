@@ -129,7 +129,7 @@ export default function Hero() {
               py-4
               rounded-full
               border-2
-             border-pink-300
+             border-pink-400
              dark:border-pink-500
              dark:text-white
               "
