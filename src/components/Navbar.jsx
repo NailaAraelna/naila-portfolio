@@ -4,7 +4,13 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50 bg-white/70 backdrop-blur-xl border-b border-pink-100">
+    <nav className="fixed top-0 left-0 w-full z-50
+  bg-white/70
+  dark:bg-slate-900/70
+  backdrop-blur-xl
+  border-b
+  border-pink-100
+  dark:border-slate-700">
 
       <div className="max-w-7xl mx-auto px-10 py-6 flex justify-between items-center">
 
@@ -12,7 +18,7 @@ export default function Navbar() {
           Naila Araelna
         </h1>
 
-        <div className="hidden md:flex gap-8 text-gray-700 text-2xl font-medium">
+        <div className="hidden md:flex gap-8 text-gray-700 dark:text-gray-200 text-2xl font-medium">
 
           <a href="#about" className="hover:text-pink-500 transition">
             About
@@ -42,7 +48,14 @@ export default function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden flex flex-col gap-4 px-6 py-5 bg-white">
+        <div className="md:hidden flex 
+        flex-col
+        gap-4
+        px-6
+        py-5
+        bg-white
+        dark:bg-slate-900
+        dark:text-white">
 
           <a href="#about">About</a>
           <a href="#skills">Skills</a>
